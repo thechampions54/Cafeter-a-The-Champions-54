@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafetería The Champions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --main-color: #0a0a52;
+      --secondary-color: #4b0082;
+      --text-color: #ffffff;
+      --hover-color: #1e90ff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: url('fondo_estadio.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: var(--main-color);
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      background: url('logo_champions.png') no-repeat center;
+      background-size: cover;
+      margin: 0 auto 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: var(--secondary-color);
+      padding: 1rem;
+    }
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: var(--hover-color);
+    }
+    section {
+      padding: 2rem;
+    }
+    .menu-item {
+      margin-bottom: 1.5rem;
+    }
+    .menu-item h3 {
+      color: var(--hover-color);
+    }
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .floating-buttons a {
+      background-color: var(--main-color);
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .floating-buttons a:hover {
+      transform: scale(1.1);
+      background-color: var(--hover-color);
+    }
+    .special-button {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #000000aa;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1>Cafetería The Champions</h1>
+  </header>  <nav>
+    <a href="#cafe">Café</a>
+    <a href="#bebidas">Bebidas</a>
+    <a href="#comidas">Comidas Rápidas</a>
+  </nav>  <section id="cafe">
+    <h2>Café</h2>
+    <p>Desde un espresso intenso hasta un capuchino que te hace sentir en una final europea.</p>
+  </section>  <section id="bebidas">
+    <h2>Bebidas</h2>
+    <p>Jugos naturales, refrescos y bebidas energéticas para mantener el ritmo del partido.</p>
+  </section>  <section id="comidas">
+    <h2>Comidas Rápidas</h2>
+    <div class="menu-item">
+      <h3>Hamburguesa Champions</h3>
+      <p>Hamburguesa de res sazonada con precisión de final europea, con queso suizo, vegetales frescos y pan artesanal.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Pizzas</h3>
+      <p>Estilo italiano, con agregos personalizados y tres tamaños al estilo fase de grupos.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Panecillos y Hot Dogs</h3>
+      <p>Rápidos, sabrosos y campeones del antojo.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Empanadas y Espaguetis</h3>
+      <p>Para los fanáticos del sabor con toque latino y europeo.</p>
+    </div>
+  </section>  <section>
+    <button class="special-button" onclick="alert('¡Felicidades! Ganaste un 10% de descuento.')">Gira la Ruleta Champions</button>
+    <br>
+    <a href="menu.pdf" download style="color:white;text-decoration:underline;">Descargar menú en PDF</a>
+  </section>  <div class="floating-buttons">
+    <a href="https://wa.me/5352505234" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>  <footer>
+    <p>&copy; 2025 Cafetería The Champions. Inspirados en la grandeza europea.</p>
+    <iframe src="https://www.google.com/maps?q=23.1060222,-82.4224682&z=15&output=embed"></iframe>
+  </footer>
+</body>
+</html>
